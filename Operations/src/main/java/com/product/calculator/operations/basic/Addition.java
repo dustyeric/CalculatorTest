@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Created by dusty on 7/10/15.
+ * @author Ekwueme CHukwudum
  * always annotate your new function with the "@Component" annotation
  */
 @Component
