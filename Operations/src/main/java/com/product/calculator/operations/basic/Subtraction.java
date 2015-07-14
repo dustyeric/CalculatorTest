@@ -30,6 +30,6 @@ public class Subtraction implements BasicOperation{
     public double perform(double arg1, double arg2) throws CalculatorException {
         LOGGER.info("will attempt to subtract the numbers "+arg1 + " " + arg2);
         //sample implementation for subtraction
-        return arg1/arg2;
+        return arg1-arg2;
     }
 }
