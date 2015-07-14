@@ -757,7 +757,7 @@
       <updated>1436530451151</updated>
       <workItem from="1436530454127" duration="233000" />
       <workItem from="1436530732523" duration="5144000" />
-      <workItem from="1436857419730" duration="4874000" />
+      <workItem from="1436857419730" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="initial Structure">
       <created>1436530867554</created>
@@ -789,11 +789,17 @@
       <option name="project" value="LOCAL" />
       <updated>1436859912367</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Spring Application Context integration added">
+      <created>1436862337938</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1436862337938</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10251000" />
+    <option name="totallyTimeSpent" value="10303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1352" height="733" extended-state="0" />
@@ -840,7 +846,8 @@
     <MESSAGE value="initial Structure" />
     <MESSAGE value="updated interfaces" />
     <MESSAGE value="initial design" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial design" />
+    <MESSAGE value="Spring Application Context integration added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Application Context integration added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
