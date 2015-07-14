@@ -11,5 +11,14 @@
 
     <artifactId>ui</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.cwg</groupId>
+            <artifactId>operations</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
