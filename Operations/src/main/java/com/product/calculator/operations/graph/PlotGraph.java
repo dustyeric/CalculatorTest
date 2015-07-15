@@ -1,11 +1,12 @@
-package com.product.calculator.operations.basic;
+package com.product.calculator.operations.graph;
 
 import com.product.calculator.exceptions.CalculatorException;
 import com.product.calculator.operations.interfaces.BasicOperation;
+import com.product.calculator.operations.interfaces.PlotFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import ptolemy.plot.*;
+
 
 /**
  * Created by dusty on 7/10/15.
@@ -18,20 +19,31 @@ public class PlotGraph implements PlotFunctions{
     /**
      * initialise a logger to your function like so
      */
-    private static Logger LOGGER = LoggerFactory.getLogger(Addition.class);
-    
-    //Plot myPlot = new Plot();
-    
-    public double setPoints() throws CalculatorException{
-    	
+    private static Logger LOGGER = LoggerFactory.getLogger(PlotGraph.class);
+
+    @Override
+    public double setEquationY() throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public double setAxes(String arg1, String arg1) throws CalculatorException{
-    	
+    @Override
+    public double setXValueRange() throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void draw() throws CalculatorException{
-    	
+    @Override
+    public double setPoints() throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double setAxes(String arg1, String arg2) throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void draw() throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

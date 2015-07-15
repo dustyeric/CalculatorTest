@@ -1,4 +1,4 @@
-package com.product.calculator.operations.basic;
+package com.product.calculator.operations.interfaces;
 
 import com.product.calculator.exceptions.CalculatorException;
 import com.product.calculator.operations.interfaces.BasicOperation;
@@ -21,9 +21,9 @@ public interface PlotFunctions {
 	
     public double setXValueRange() throws CalculatorException;
     
-	public double setPoints() throws CalculatorException;
+    public double setPoints() throws CalculatorException;
 
-    public double setAxes(String arg1, String arg1) throws CalculatorException;
+    public double setAxes(String arg1, String arg2) throws CalculatorException;
 
     public void draw() throws CalculatorException;
 	
