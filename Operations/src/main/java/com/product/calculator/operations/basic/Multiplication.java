@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Multiplication implements BasicOperation {
 
-    //this is my logger
+    //this is my logger class
     Logger LOGGER = LoggerFactory.getLogger(Multiplication.class);
 
     @Override
