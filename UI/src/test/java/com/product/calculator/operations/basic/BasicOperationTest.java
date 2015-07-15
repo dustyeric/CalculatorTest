@@ -29,7 +29,7 @@ public class BasicOperationTest {
     /**
      * initialise a logger to your function like so
      */
-    private static Logger LOGGER = LoggerFactory.getLogger(BasicOperationTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(BasicOperationTest.class);
 
 
     @Test
