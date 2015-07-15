@@ -1,6 +1,7 @@
 package com.product.calculator.util;
 
 import com.product.calculator.operations.basic.Addition;
+import com.product.calculator.operations.basic.Division;
 import com.product.calculator.operations.basic.Multiplication;
 import com.product.calculator.operations.basic.Subtraction;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +32,10 @@ public class Functions {
     @Autowired
     public Multiplication multiplication;
 
+    /**
+     * registering the division component
+     */
+    @Autowired
+    public Division division;
 
 }

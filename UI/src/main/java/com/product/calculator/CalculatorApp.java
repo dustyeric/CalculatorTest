@@ -38,6 +38,9 @@ public class CalculatorApp {
 
             answer = functions.multiplication.perform(-3,4);
             LOGGER.info("The ans of that is "+answer);
+            
+            answer = functions.division.perform(10,2);
+            LOGGER.info("The ans of that is "+answer);
 
 
         } catch (CalculatorException e) {
