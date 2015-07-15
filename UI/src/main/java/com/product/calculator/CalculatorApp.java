@@ -1,6 +1,7 @@
 package com.product.calculator;
 
 import com.product.calculator.exceptions.CalculatorException;
+import com.product.calculator.ui.AppUI;
 import com.product.calculator.util.Functions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +22,8 @@ public class CalculatorApp {
     @Autowired
     Functions functions;
 
+    @Autowired
+    AppUI appUI;
     /**
      * starts the whole application
      */
@@ -43,18 +46,13 @@ public class CalculatorApp {
         }
 
 
+        appUI.startUI();
         testAddition();
-        startUi();
         //ui team probably start your ui thread from here for instance using a function called
         //startUi()
     }
 
-    /**
-     * example ui start function
-     */
-    public void startUi(){
 
-    }
     /**
      * tests the addtion bean
      */
