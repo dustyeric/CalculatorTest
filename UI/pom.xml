@@ -12,6 +12,11 @@
     <artifactId>ui</artifactId>
 
     <dependencies>
+<dependency>
+	<groupId>org.jgrapht</groupId>
+	<artifactId>jgrapht-jdk1.5</artifactId>
+	<version>0.7.3</version>
+</dependency>
 
         <dependency>
             <groupId>com.cwg</groupId>
