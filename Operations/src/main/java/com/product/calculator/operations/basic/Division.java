@@ -27,12 +27,12 @@ public class Division implements BasicOperation {
         //an error occured
         if(arg2== 0)
         {
-            throw new CalculatorException("arg1 cannot be zero");
+            throw new CalculatorException("division is not allowed");
         }
         //dividing two numbers
         double result = arg1 / arg2;
 
-        LOGGER.info("Result = "+ result);
+        
         return result;
        
     }
