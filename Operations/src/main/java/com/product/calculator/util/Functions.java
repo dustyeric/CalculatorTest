@@ -1,6 +1,7 @@
 package com.product.calculator.util;
 
 import com.product.calculator.operations.basic.Addition;
+import com.product.calculator.operations.basic.Subtraction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,6 +18,11 @@ public class Functions {
      */
     @Autowired
     public Addition addition;
+/**
+     * registering the subtraction component
+     */
+    @Autowired
+    public Subtraction subtraction;
 
 
 }
