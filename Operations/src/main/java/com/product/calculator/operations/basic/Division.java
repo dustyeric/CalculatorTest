@@ -27,7 +27,7 @@ public class Division implements BasicOperation {
         //an error occured
         if(arg2== 0)
         {
-            throw new CalculatorException("division is not allowed");
+            throw new CalculatorException("Cannot divide a number by zero, output is undefined");
         }
         //dividing two numbers
         double result = arg1 / arg2;
