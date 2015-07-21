@@ -16,15 +16,15 @@ public interface PlotFunctions {
      * @return result
      * @throws CalculatorException
      */
-	
+
     public double setEquationY() throws CalculatorException;
-	
-    public double setXValueRange() throws CalculatorException;
-    
-    public double setPoints() throws CalculatorException;
 
-    public double setAxes(String arg1, String arg2) throws CalculatorException;
+    public int setNoOfPoints() throws CalculatorException;
 
-    public void draw() throws CalculatorException;
-	
+    public double setMinXValue() throws CalculatorException;
+
+    public double setMaxXXValue() throws CalculatorException;
+
+    public double plot() throws CalculatorException;
+
 }

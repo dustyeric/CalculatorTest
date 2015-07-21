@@ -27,23 +27,22 @@ public class PlotGraph implements PlotFunctions{
     }
 
     @Override
-    public double setXValueRange() throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int setNoOfPoints() throws CalculatorException {
+        return 0;
     }
 
     @Override
-    public double setPoints() throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double setMinXValue() throws CalculatorException {
+        return 0;
     }
 
     @Override
-    public double setAxes(String arg1, String arg2) throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double setMaxXXValue() throws CalculatorException {
+        return 0;
     }
 
     @Override
-    public void draw() throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double plot() throws CalculatorException {
+        return 0;
     }
-
 }
