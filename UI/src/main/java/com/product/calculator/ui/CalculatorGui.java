@@ -9,13 +9,20 @@ package com.product.calculator.ui;
  *
  * @author OLUWATOMILOA
  */
-public class calculator extends javax.swing.JFrame {
-
+public class CalculatorGui extends javax.swing.JFrame {
+private double total,total2=0.0;
+private char math_operator;
     /**
      * Creates new form calculator
      */
-    public calculator() {
+    public CalculatorGui() {
         initComponents();
+    }
+        private void getOperator(String btnText)
+    {
+        math_operator=btnText.charAt(0);
+        total=total+Double.parseDouble(screen.getText());
+        screen.setText(" ");
     }
 
     /**
@@ -43,7 +50,7 @@ public class calculator extends javax.swing.JFrame {
         multiply = new javax.swing.JButton();
         one = new javax.swing.JButton();
         two = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        three = new javax.swing.JButton();
         plus = new javax.swing.JButton();
         dot = new javax.swing.JButton();
         equals = new javax.swing.JButton();
@@ -86,7 +93,7 @@ public class calculator extends javax.swing.JFrame {
         graph = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         screen = new javax.swing.JTextArea();
-        jPanel7 = new javax.swing.JPanel();
+        graphPanel = new javax.swing.JPanel();
 
         jLabel1.setText("jLabel1");
 
@@ -104,12 +111,27 @@ public class calculator extends javax.swing.JFrame {
 
         seven.setBackground(new java.awt.Color(102, 102, 102));
         seven.setText("7");
+        seven.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sevenActionPerformed(evt);
+            }
+        });
 
         eight.setBackground(new java.awt.Color(102, 102, 102));
         eight.setText("8");
+        eight.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eightActionPerformed(evt);
+            }
+        });
 
         nine.setBackground(new java.awt.Color(102, 102, 102));
         nine.setText("9");
+        nine.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nineActionPerformed(evt);
+            }
+        });
 
         clear.setBackground(new java.awt.Color(102, 102, 102));
         clear.setText("CE");
@@ -124,6 +146,11 @@ public class calculator extends javax.swing.JFrame {
 
         four.setBackground(new java.awt.Color(102, 102, 102));
         four.setText("4");
+        four.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fourActionPerformed(evt);
+            }
+        });
 
         six.setBackground(new java.awt.Color(102, 102, 102));
         six.setText("6");
@@ -133,12 +160,27 @@ public class calculator extends javax.swing.JFrame {
 
         one.setBackground(new java.awt.Color(102, 102, 102));
         one.setText("1");
+        one.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                oneActionPerformed(evt);
+            }
+        });
 
         two.setBackground(new java.awt.Color(102, 102, 102));
         two.setText("2");
+        two.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                twoActionPerformed(evt);
+            }
+        });
 
-        jButton11.setBackground(new java.awt.Color(102, 102, 102));
-        jButton11.setText("3");
+        three.setBackground(new java.awt.Color(102, 102, 102));
+        three.setText("3");
+        three.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                threeActionPerformed(evt);
+            }
+        });
 
         plus.setBackground(new java.awt.Color(102, 102, 102));
         plus.setText("+");
@@ -171,6 +213,11 @@ public class calculator extends javax.swing.JFrame {
 
         zero.setBackground(new java.awt.Color(102, 102, 102));
         zero.setText("0");
+        zero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zeroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -206,7 +253,7 @@ public class calculator extends javax.swing.JFrame {
                                             .addComponent(two, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGap(18, 18, 18)
                                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton11)
+                                        .addComponent(three)
                                         .addComponent(equals))))
                             .addGap(18, 18, 18)
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -245,7 +292,7 @@ public class calculator extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(one)
                     .addComponent(plus)
-                    .addComponent(jButton11)
+                    .addComponent(three)
                     .addComponent(two))
                 .addGap(31, 31, 31)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -485,18 +532,18 @@ public class calculator extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Basic Calculator", jPanel2);
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout graphPanelLayout = new javax.swing.GroupLayout(graphPanel);
+        graphPanel.setLayout(graphPanelLayout);
+        graphPanelLayout.setHorizontalGroup(
+            graphPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 827, Short.MAX_VALUE)
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        graphPanelLayout.setVerticalGroup(
+            graphPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 479, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Graph", jPanel7);
+        jTabbedPane1.addTab("Graph", graphPanel);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -530,12 +577,54 @@ public class calculator extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void fiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fiveActionPerformed
-       
+        String fiveText=screen.getText()+five.getText();
+         screen.setText(fiveText);
     }//GEN-LAST:event_fiveActionPerformed
 
     private void dotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dotActionPerformed
-        // TODO add your handling code here:
+         String dotText=screen.getText()+dot.getText();
+        screen.setText(dotText);
     }//GEN-LAST:event_dotActionPerformed
+
+    private void oneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oneActionPerformed
+         String oneText=screen.getText()+one.getText();
+         screen.setText(oneText);
+    }//GEN-LAST:event_oneActionPerformed
+
+    private void twoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_twoActionPerformed
+       String twoText=screen.getText()+two.getText();
+       screen.setText(twoText);
+    }//GEN-LAST:event_twoActionPerformed
+
+    private void threeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_threeActionPerformed
+         String threeText=screen.getText()+three.getText();
+         screen.setText(threeText);
+    }//GEN-LAST:event_threeActionPerformed
+
+    private void fourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fourActionPerformed
+        String fourText=screen.getText()+four.getText();
+         screen.setText(fourText);
+    }//GEN-LAST:event_fourActionPerformed
+
+    private void sevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sevenActionPerformed
+        String sevenText=screen.getText()+seven.getText();
+         screen.setText(sevenText);
+    }//GEN-LAST:event_sevenActionPerformed
+
+    private void eightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eightActionPerformed
+         String eightText=screen.getText()+eight.getText();
+         screen.setText(eightText);
+    }//GEN-LAST:event_eightActionPerformed
+
+    private void nineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nineActionPerformed
+        String nineText=screen.getText()+nine.getText();
+        screen.setText(nineText);
+    }//GEN-LAST:event_nineActionPerformed
+
+    private void zeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zeroActionPerformed
+        String zeroText=screen.getText()+zero.getText();
+        screen.setText(zeroText);
+    }//GEN-LAST:event_zeroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -558,7 +647,7 @@ public class calculator extends javax.swing.JFrame {
     private javax.swing.JButton four;
     private javax.swing.JTextField functionofx;
     private javax.swing.JButton graph;
-    private javax.swing.JButton jButton11;
+    private javax.swing.JPanel graphPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -569,7 +658,6 @@ public class calculator extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
@@ -600,6 +688,7 @@ public class calculator extends javax.swing.JFrame {
     private javax.swing.JButton tangent;
     private javax.swing.JButton tangentarc;
     private javax.swing.JButton tenpowerofx;
+    private javax.swing.JButton three;
     private javax.swing.JButton two;
     private javax.swing.JButton xpowery;
     private javax.swing.JButton zero;

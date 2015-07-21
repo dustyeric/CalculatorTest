@@ -186,7 +186,7 @@
                                                   </Group>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jButton11" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="three" min="-2" max="-2" attributes="0"/>
                                                       <Component id="equals" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
@@ -238,7 +238,7 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="one" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="plus" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="three" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="two" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
@@ -268,6 +268,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="7"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sevenActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="eight">
                       <Properties>
@@ -276,6 +279,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="8"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eightActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="nine">
                       <Properties>
@@ -284,6 +290,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="9"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nineActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="clear">
                       <Properties>
@@ -311,6 +320,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="4"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fourActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="six">
                       <Properties>
@@ -335,6 +347,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="1"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oneActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="two">
                       <Properties>
@@ -343,14 +358,20 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="2"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="twoActionPerformed"/>
+                      </Events>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton11">
+                    <Component class="javax.swing.JButton" name="three">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="3"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="threeActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="plus">
                       <Properties>
@@ -426,6 +447,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zeroActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -773,7 +797,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="jPanel7">
+            <Container class="javax.swing.JPanel" name="graphPanel">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                   <JTabbedPaneConstraints tabName="Graph">

@@ -4,9 +4,9 @@ import com.product.calculator.operations.basic.Addition;
 import com.product.calculator.operations.basic.Division;
 import com.product.calculator.operations.basic.Multiplication;
 import com.product.calculator.operations.basic.Subtraction;
-import com.product.calculator.operations.specialfunctions.TrigCos;
+//import com.product.calculator.operations.specialfunctions.TrigCos;
 import com.product.calculator.operations.specialfunctions.TrigSin;
-import com.product.calculator.operations.specialfunctions.TrigTan;
+//import com.product.calculator.operations.specialfunctions.TrigTan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
