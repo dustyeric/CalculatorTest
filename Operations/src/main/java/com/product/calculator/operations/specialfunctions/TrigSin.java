@@ -28,7 +28,8 @@ public class TrigSin implements SpecialFunctions {
         System.out.format("Value of sin %.1f degrees is %.4f%n", degree, Math.sin(radians));
         double sineValueBeforeRounding = Math.sin(radians);
 
-       double sineValueAfterRounding = (double) Math.round(sineValueBeforeRounding * 100000) / 100000;
+        //double sineValueAfterRounding = (double) Math.round(sineValueBeforeRounding * 100000) / 100000;
+        double sineValueAfterRounding = sineValueBeforeRounding;
 
         LOGGER.info(" the result from the trig sine function {}, is {} ", degree, sineValueAfterRounding);
 
