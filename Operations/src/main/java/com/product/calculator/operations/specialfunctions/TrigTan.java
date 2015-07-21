@@ -26,11 +26,11 @@ public class TrigTan implements SpecialFunctions {
         //return Math.tan(radians);
          double tanValueBeforeRounding = Math.tan(radians);
 
-       double tanValueAfterRounding = (double) Math.round(tanValueBeforeRounding * 100000) / 100000;
+       //double tanValueAfterRounding = (double) Math.round(tanValueBeforeRounding * 100000) / 100000;
 
-        LOGGER.info(" the result from the trig tan function {}, is {} ", degree, tanValueAfterRounding);
+        LOGGER.info(" the result from the trig tan function {}, is {} ", degree, tanValueBeforeRounding);
 
-        return tanValueAfterRounding;
+        return tanValueBeforeRounding;
     }
 
     @Override
