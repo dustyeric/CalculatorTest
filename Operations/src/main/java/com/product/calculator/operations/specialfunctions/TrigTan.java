@@ -23,7 +23,7 @@ public class TrigTan implements SpecialFunctions {
        double radians = Math.toRadians(degree);
         LOGGER.info("about performing the trig tangent function for a single argument");
          System.out.println("Value of cos " +degree+ " is: "+Math.tan(radians));
-        //return Math.tan(radians);
+        //return Math.tan(radians)
          double tanValueBeforeRounding = Math.tan(radians);
 
        //double tanValueAfterRounding = (double) Math.round(tanValueBeforeRounding * 100000) / 100000;
