@@ -4,6 +4,9 @@ import com.product.calculator.operations.basic.Addition;
 import com.product.calculator.operations.basic.Division;
 import com.product.calculator.operations.basic.Multiplication;
 import com.product.calculator.operations.basic.Subtraction;
+import com.product.calculator.operations.specialfunctions.TrigCos;
+import com.product.calculator.operations.specialfunctions.TrigSin;
+import com.product.calculator.operations.specialfunctions.TrigTan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -37,5 +40,20 @@ public class Functions {
      */
     @Autowired
     public Division division;
-
+    
+    /**
+     * registering the trigSin component
+     */
+    @Autowired
+    public TrigSin trigSin;
+    /**
+     * registering the trigCos component
+     */
+    /*@Autowired
+    public TrigCos trigCos;
+    /**
+     * registering the trigTan component
+     */
+   // @Autowired
+    //public TrigTan trigTan;*/
 }
