@@ -46,10 +46,8 @@ public class Functions {
      */
     @Autowired
     public TrigSin trigSin;
-    /**
-     * registering the trigCos component
-     */
-    /*@Autowired
+
+   @Autowired
     public TrigCos trigCos;
     /**
      * registering the trigTan component
