@@ -27,4 +27,6 @@ public interface SpecialFunctions {
      */
     double perform(double arg1, double arg2) throws CalculatorException;
 
+    
+    long perform(long arg1) throws CalculatorException;
 }

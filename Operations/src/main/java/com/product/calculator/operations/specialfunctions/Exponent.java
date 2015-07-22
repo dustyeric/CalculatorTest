@@ -16,19 +16,20 @@ import org.springframework.stereotype.Component;
  * @author TOMILOLA
  */
 @Component
-public class Reciprocal implements SpecialFunctions {
+public class Exponent implements SpecialFunctions {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Reciprocal.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Exponent.class);
 /**
- * finds the inverse of an integer
+ * finds the exponential value of a single argument
  * @param arg1
- * @return result
+ * @return
  * @throws CalculatorException 
  */
     @Override
     public double perform(double arg1) throws CalculatorException {
-        LOGGER.info("finding the inverse of a single argument");
-        return 1 / arg1;
+        LOGGER.info("finds the exponential value");
+        return Math.getExponent(arg1);
+
     }
 
     @Override

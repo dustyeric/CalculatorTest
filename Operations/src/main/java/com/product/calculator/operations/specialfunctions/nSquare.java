@@ -16,29 +16,32 @@ import org.springframework.stereotype.Component;
  * @author TOMILOLA
  */
 @Component
-public class Reciprocal implements SpecialFunctions {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Reciprocal.class);
+public class nSquare implements SpecialFunctions {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Cube.class);
+
+    @Override
+    public double perform(double arg1) throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 /**
- * finds the inverse of an integer
+ * returns the power value of two arguments
  * @param arg1
- * @return result
+ * @param arg2
+ * @return integer
  * @throws CalculatorException 
  */
     @Override
-    public double perform(double arg1) throws CalculatorException {
-        LOGGER.info("finding the inverse of a single argument");
-        return 1 / arg1;
-    }
-
-    @Override
     public double perform(double arg1, double arg2) throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet.");
+        LOGGER.info("getting the power value of two arguments");
+        return Math.pow(arg1, arg2);
+
     }
 
     @Override
     public long perform(long arg1) throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

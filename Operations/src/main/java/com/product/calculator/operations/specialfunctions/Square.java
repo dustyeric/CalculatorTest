@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
  *
  * @author TOMILOLA
  */
+@Component
 public class Square implements SpecialFunctions {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Square.class);
@@ -34,6 +35,11 @@ public class Square implements SpecialFunctions {
     @Override
     public double perform(double arg1, double arg2) throws CalculatorException {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public long perform(long arg1) throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
     
 }

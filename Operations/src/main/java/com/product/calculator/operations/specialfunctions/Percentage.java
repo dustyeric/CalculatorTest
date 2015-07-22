@@ -4,41 +4,40 @@
  * and open the template in the editor.
  */
 package com.product.calculator.operations.specialfunctions;
-
 import com.product.calculator.exceptions.CalculatorException;
 import com.product.calculator.operations.interfaces.SpecialFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
 /**
  *
  * @author TOMILOLA
  */
 @Component
-public class Reciprocal implements SpecialFunctions {
+public class Percentage implements SpecialFunctions {
+    private static final Logger LOGGER= LoggerFactory.getLogger(Percentage.class);
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Reciprocal.class);
+    @Override
+    public double perform(double arg1) throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
 /**
- * finds the inverse of an integer
+ * returns percentage value of two arguments
  * @param arg1
- * @return result
+ * @param arg2
+ * @return double
  * @throws CalculatorException 
  */
     @Override
-    public double perform(double arg1) throws CalculatorException {
-        LOGGER.info("finding the inverse of a single argument");
-        return 1 / arg1;
-    }
-
-    @Override
     public double perform(double arg1, double arg2) throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet.");
+        LOGGER.info("getting the percentage value");
+    
+        return ((arg1 *100) /arg2);
+       
     }
 
     @Override
     public long perform(long arg1) throws CalculatorException {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
-
 }

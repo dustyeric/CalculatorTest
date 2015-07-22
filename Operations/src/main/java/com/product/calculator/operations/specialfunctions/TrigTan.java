@@ -35,7 +35,12 @@ public class TrigTan implements SpecialFunctions {
 
     @Override
     public double perform(double arg1, double arg2) throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
+
+    @Override
+    public long perform(long arg1) throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet.");
     
+}
 }

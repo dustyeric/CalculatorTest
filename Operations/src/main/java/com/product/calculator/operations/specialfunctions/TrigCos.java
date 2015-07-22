@@ -39,4 +39,9 @@ public class TrigCos implements SpecialFunctions {
     public double perform(double arg1, double arg2) throws CalculatorException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public long perform(long arg1) throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

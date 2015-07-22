@@ -4,13 +4,19 @@ import com.product.calculator.operations.basic.Addition;
 import com.product.calculator.operations.basic.Division;
 import com.product.calculator.operations.basic.Multiplication;
 import com.product.calculator.operations.basic.Subtraction;
+import com.product.calculator.operations.specialfunctions.Cube;
+import com.product.calculator.operations.specialfunctions.Exponent;
+import com.product.calculator.operations.specialfunctions.Factorial;
 import com.product.calculator.operations.specialfunctions.Modulos;
+import com.product.calculator.operations.specialfunctions.Percentage;
 import com.product.calculator.operations.specialfunctions.Reciprocal;
+
 import com.product.calculator.operations.specialfunctions.Square;
 import com.product.calculator.operations.specialfunctions.TrigCos;
-//import com.product.calculator.operations.specialfunctions.TrigCos;
+
 import com.product.calculator.operations.specialfunctions.TrigSin;
-//import com.product.calculator.operations.specialfunctions.TrigTan;
+import com.product.calculator.operations.specialfunctions.nSquare;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -56,16 +62,43 @@ public class Functions {
    /**
     * registering the reciprocal component
     */
-   @Autowired
-   public Reciprocal reciprocal;
+   
+   @Autowired public Reciprocal reciprocal;
    /**
     * registering the modulos component
     */
-   @Autowired
-   public Modulos modulos;
+   
+   @Autowired public Modulos modulos;
    /**
     * registering the square component
     */
-   @Autowired
-   public Square square;
+   
+   @Autowired public Square square;
+  /**
+   * registering the cube component
+   */ 
+   
+   @Autowired  public Cube cube;
+   
+   /**
+    * registering the nsquare component
+    */
+   
+  @Autowired  public nSquare nsquare;
+   /**
+    * registering the percentage component
+    */
+   
+  @Autowired  public Percentage percentage;
+   /**
+    * registering the exponent component
+    */
+   
+    @Autowired public  Exponent exponent;
+   
+   /**
+    * registering the factorial component
+    */
+   
+   @Autowired public Factorial factorial;
 }

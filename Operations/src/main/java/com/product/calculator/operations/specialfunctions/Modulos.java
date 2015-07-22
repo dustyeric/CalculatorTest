@@ -36,5 +36,10 @@ public class Modulos implements SpecialFunctions {
         LOGGER.info("about getting the remainder value of two arguments");
         return arg1 % arg2;
     }
+
+    @Override
+    public long perform(long arg1) throws CalculatorException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
