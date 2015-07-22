@@ -9,11 +9,49 @@ import com.product.calculator.ui.CalculatorGui;
 import javax.swing.*;
 public class parse1d extends Applet {
 
+    CalculatorGui calculatorGui = new CalculatorGui();
     G2Dint graph = new G2Dint();   // Graph class to do the plotting
     Axis xaxis;
     Axis yaxis;
     DataSet data;
 
+
+    String fox;
+    int points;
+    double maximum;
+    double minimum;
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public double getMaximum() {
+        return maximum;
+    }
+
+    public void setMaximum(double maximum) {
+        this.maximum = maximum;
+    }
+
+    public double getMinimum() {
+        return minimum;
+    }
+
+    public void setMinimum(double minimum) {
+        this.minimum = minimum;
+    }
+
+    public String getFox() {
+        return fox;
+    }
+
+    public void setFox(String fox) {
+        this.fox = fox;
+    }
 
     public void init() {
         Label title = new Label("Function Parsing", Label.CENTER);
@@ -58,46 +96,17 @@ public class parse1d extends Applet {
         graph.setDataBackground(new Color(255, 200, 175));
         graph.setBackground(new Color(200, 150, 100));
 
-
-        //plot();
+        plot();
 
     }
-/*
-
 
     void plot() {
-        int points;
-        double maximum;
-        double minimum;
+
         double x;
         int count = 0;
         boolean error = false;
 
-        try {
-            points = Integer.parseInt(pinput.getText());
-        } catch (Exception e) {
-//              this.showStatus("Error with number of points!");
-            System.out.println("Number of points error " + e.getMessage());
-            return;
-        }
-
-        try {
-            maximum = Double.valueOf(maxinput.getText()).doubleValue();
-        } catch (Exception e) {
-            //            this.showStatus("Error with X maximum value!");
-            System.out.println("X maximum error " + e.getMessage());
-            return;
-        }
-
-        try {
-            minimum = Double.valueOf(mininput.getText()).doubleValue();
-        } catch (Exception e) {
-            //          this.showStatus("Error with X minimum value!");
-            System.out.println("X minimum error " + e.getMessage());
-            return;
-        }
-
-        ParseFunction function = new ParseFunction(finput.getText());
+        ParseFunction function = new ParseFunction(this.fox);
 
         if (!function.parse()) {
             //        this.showStatus("Failed to parse function!");
@@ -105,13 +114,13 @@ public class parse1d extends Applet {
             return;
         }
 
-        double d[] = new double[2 * points];
+        double d[] = new double[2 * this.points];
 
         // this.showStatus("Calculating points!");
 
-        for (int i = 0; i < points; i++) {
+        for (int i = 0; i < this.points; i++) {
 
-            x = minimum + i * (maximum - minimum) / (points - 1);
+            x = this.minimum + i * (this.maximum - this.minimum) / (this.points - 1);
             d[count] = x;
             try {
                 d[count + 1] = function.getResult(x);
@@ -133,7 +142,7 @@ public class parse1d extends Applet {
         }
 
 
-        yaxis.setTitleText(finput.getText());
+        yaxis.setTitleText(this.fox);
 
         data.deleteData();
 
@@ -148,14 +157,13 @@ public class parse1d extends Applet {
 
         graph.repaint();
     }
-*/
 
-    public static void main(String[] a) {
+
+    public void create() {
 
         javax.swing.JFrame f = new javax.swing.JFrame();
         Applet app = new parse1d();
         app.init();
-
         f.getContentPane().add(app);
         f.pack();
         f.setSize(new Dimension(500, 500));
