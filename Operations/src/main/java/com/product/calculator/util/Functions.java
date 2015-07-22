@@ -122,5 +122,5 @@ public class Functions {
    @Autowired public NaturalLog naturalLog;
    @Autowired public CubeRoot cubeRoot;
     @Autowired public SquareRoot squareRoot;
-   @Autowired public LogToBaseX logToBaseX;
+     @Autowired public LogToBaseX logToBaseX;
 }
