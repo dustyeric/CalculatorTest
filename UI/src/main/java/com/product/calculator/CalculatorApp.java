@@ -2,6 +2,7 @@ package com.product.calculator;
 
 import com.product.calculator.exceptions.CalculatorException;
 import com.product.calculator.ui.AppUI;
+import com.product.calculator.ui.CalculatorGui;
 import com.product.calculator.util.Functions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +25,7 @@ public class CalculatorApp {
 
     @Autowired
     AppUI appUI;
+
     /**
      * starts the whole application
      */
@@ -48,11 +50,19 @@ public class CalculatorApp {
             LOGGER.error(e.getMessage());
         }
 
-
         appUI.startUI();
         testAddition();
         //ui team probably start your ui thread from here for instance using a function called
         //startUi()
+
+    /*
+        try {
+            functions.plotGraph.plot();
+        } catch (CalculatorException e) {
+            e.printStackTrace();
+        }
+    */
+
     }
 
 
