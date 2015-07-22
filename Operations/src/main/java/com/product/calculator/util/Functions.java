@@ -6,6 +6,7 @@ import com.product.calculator.operations.basic.Multiplication;
 import com.product.calculator.operations.basic.Subtraction;
 import com.product.calculator.operations.specialfunctions.Modulos;
 import com.product.calculator.operations.specialfunctions.Reciprocal;
+import com.product.calculator.operations.specialfunctions.Square;
 import com.product.calculator.operations.specialfunctions.TrigCos;
 //import com.product.calculator.operations.specialfunctions.TrigCos;
 import com.product.calculator.operations.specialfunctions.TrigSin;
@@ -53,18 +54,18 @@ public class Functions {
    @Autowired
     public TrigCos trigCos;
    /**
-    * 
+    * registering the reciprocal component
     */
    @Autowired
    public Reciprocal reciprocal;
    /**
-    * 
+    * registering the modulos component
     */
    @Autowired
    public Modulos modulos;
-    /**
-     * registering the trigTan component
-     */
-   // @Autowired
-    //public TrigTan trigTan;*/
+   /**
+    * registering the square component
+    */
+   @Autowired
+   public Square square;
 }
