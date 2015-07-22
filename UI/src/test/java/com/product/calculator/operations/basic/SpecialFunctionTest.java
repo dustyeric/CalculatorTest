@@ -148,4 +148,16 @@ public class SpecialFunctionTest {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    @Test
+    public void PiTest(){
+        try {
+            double result=functions.pieclass.perform(2.0);
+            LOGGER.info("\n************\n\the pie value {},", result);
+            LOGGER.info("\n\n****************************\n");
+            assertEquals(3.141529, result,Double.MAX_VALUE);
+        } catch (CalculatorException ex) {
+            java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }

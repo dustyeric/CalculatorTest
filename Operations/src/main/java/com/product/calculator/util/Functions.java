@@ -9,6 +9,7 @@ import com.product.calculator.operations.specialfunctions.Exponent;
 import com.product.calculator.operations.specialfunctions.Factorial;
 import com.product.calculator.operations.specialfunctions.Modulos;
 import com.product.calculator.operations.specialfunctions.Percentage;
+import com.product.calculator.operations.specialfunctions.PieClass;
 import com.product.calculator.operations.specialfunctions.Reciprocal;
 
 import com.product.calculator.operations.specialfunctions.Square;
@@ -103,7 +104,11 @@ public class Functions {
    
    @Autowired public Factorial factorial;
    /**
-    * registering the 10^x compnent
+    * registering the 10^x component
     */
    @Autowired public ValuePower valuepower;
+   /**
+    * registering the pi component
+    */
+   @Autowired public PieClass pieclass;
 }
