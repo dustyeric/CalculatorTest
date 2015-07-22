@@ -18,12 +18,12 @@ private char math_operator;
     public CalculatorGui() {
         initComponents();
     }
-        private void getOperator(String btnText)
+  /*  public void getOperator(String btnText)
     {
         math_operator=btnText.charAt(0);
         total=total+Double.parseDouble(txtscreen.getText());
         txtscreen.setText(" ");
-    }
+    }*/
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -195,6 +195,11 @@ private char math_operator;
 
         butEquals.setBackground(new java.awt.Color(102, 102, 102));
         butEquals.setText("=");
+        butEquals.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butEqualsActionPerformed(evt);
+            }
+        });
 
         butMinus.setBackground(new java.awt.Color(102, 102, 102));
         butMinus.setText("-");
@@ -608,7 +613,7 @@ private char math_operator;
 
     private void butSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butSevenActionPerformed
         String sevenText=txtscreen.getText()+butSeven.getText();
-         txtscreen.setText(sevenText);
+        txtscreen.setText(sevenText);
     }//GEN-LAST:event_butSevenActionPerformed
 
     private void butEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butEightActionPerformed
@@ -626,53 +631,78 @@ private char math_operator;
         txtscreen.setText(zeroText);
     }//GEN-LAST:event_butZeroActionPerformed
 
+    private void butEqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butEqualsActionPerformed
+      /* switch(math_operator)
+      {
+          case '+':
+              total2=total+Double.parseDouble(txtscreen.getText());
+              break;
+          case'-':
+               total2=total-Double.parseDouble(txtscreen.getText());
+              break;
+           case'/':
+                total2=total/Double.parseDouble(txtscreen.getText());
+               break;
+           case'*':
+                total2=total*Double.parseDouble(txtscreen.getText());
+               break;
+           case'%':
+                total2=total%Double.parseDouble(txtscreen.getText());
+               break;
+              
+      }
+      txtscreen.setText(Double.toString(total2));
+      total=0;
+        */
+    }//GEN-LAST:event_butEqualsActionPerformed
+
     /**
      * @param args the command line arguments
      */
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButRootofx;
-    private javax.swing.JButton butClear;
-    private javax.swing.JButton butClosebracket;
-    private javax.swing.JButton butCosine;
-    private javax.swing.JButton butCosinearc;
-    private javax.swing.JButton butCube;
-    private javax.swing.JButton butDivide;
-    private javax.swing.JButton butDot;
-    private javax.swing.JButton butEight;
-    private javax.swing.JButton butEquals;
-    private javax.swing.JButton butExponential;
-    private javax.swing.JButton butFactorial;
-    private javax.swing.JButton butFive;
-    private javax.swing.JButton butFour;
-    private javax.swing.JButton butLogarithm;
-    private javax.swing.JButton butMemory;
-    private javax.swing.JButton butMinus;
-    private javax.swing.JButton butMod;
-    private javax.swing.JButton butMultiply;
-    private javax.swing.JButton butNine;
-    private javax.swing.JButton butOne;
-    private javax.swing.JButton butOpenbracket;
-    private javax.swing.JButton butPi;
-    private javax.swing.JButton butPlot;
-    private javax.swing.JButton butPlus;
-    private javax.swing.JButton butPlusminus;
-    private javax.swing.JButton butReciprocal;
-    private javax.swing.JButton butSeven;
-    private javax.swing.JButton butSine;
-    private javax.swing.JButton butSinearc;
-    private javax.swing.JButton butSix;
-    private javax.swing.JButton butSquare;
-    private javax.swing.JButton butSquareroot;
-    private javax.swing.JButton butTangent;
-    private javax.swing.JButton butTangentarc;
-    private javax.swing.JButton butTenpowerofx;
-    private javax.swing.JButton butThree;
-    private javax.swing.JButton butTwo;
-    private javax.swing.JButton butXpowery;
-    private javax.swing.JButton butZero;
-    private javax.swing.JButton butln;
+    public javax.swing.JButton ButRootofx;
+    public javax.swing.JButton butClear;
+    public javax.swing.JButton butClosebracket;
+    public javax.swing.JButton butCosine;
+    public javax.swing.JButton butCosinearc;
+    public javax.swing.JButton butCube;
+    public javax.swing.JButton butDivide;
+    public javax.swing.JButton butDot;
+    public javax.swing.JButton butEight;
+    public javax.swing.JButton butEquals;
+    public javax.swing.JButton butExponential;
+    public javax.swing.JButton butFactorial;
+    public javax.swing.JButton butFive;
+    public javax.swing.JButton butFour;
+    public javax.swing.JButton butLogarithm;
+    public javax.swing.JButton butMemory;
+    public javax.swing.JButton butMinus;
+    public javax.swing.JButton butMod;
+    public javax.swing.JButton butMultiply;
+    public javax.swing.JButton butNine;
+    public javax.swing.JButton butOne;
+    public javax.swing.JButton butOpenbracket;
+    public javax.swing.JButton butPi;
+    public javax.swing.JButton butPlot;
+    public javax.swing.JButton butPlus;
+    public javax.swing.JButton butPlusminus;
+    public javax.swing.JButton butReciprocal;
+    public javax.swing.JButton butSeven;
+    public javax.swing.JButton butSine;
+    public javax.swing.JButton butSinearc;
+    public javax.swing.JButton butSix;
+    public javax.swing.JButton butSquare;
+    public javax.swing.JButton butSquareroot;
+    public javax.swing.JButton butTangent;
+    public javax.swing.JButton butTangentarc;
+    public javax.swing.JButton butTenpowerofx;
+    public javax.swing.JButton butThree;
+    public javax.swing.JButton butTwo;
+    public javax.swing.JButton butXpowery;
+    public javax.swing.JButton butZero;
+    public javax.swing.JButton butln;
     private javax.swing.JPanel graphPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -687,10 +717,10 @@ private char math_operator;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField txtFunctionofx;
-    private javax.swing.JTextField txtMaximum;
-    private javax.swing.JTextField txtMinimum;
-    private javax.swing.JTextField txtPoints;
-    private javax.swing.JTextArea txtscreen;
+    public javax.swing.JTextField txtFunctionofx;
+    public javax.swing.JTextField txtMaximum;
+    public javax.swing.JTextField txtMinimum;
+    public javax.swing.JTextField txtPoints;
+    public javax.swing.JTextArea txtscreen;
     // End of variables declaration//GEN-END:variables
 }
