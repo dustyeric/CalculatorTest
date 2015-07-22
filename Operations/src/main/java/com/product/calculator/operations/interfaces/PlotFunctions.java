@@ -25,6 +25,6 @@ public interface PlotFunctions {
 
     public double setMaxXXValue() throws CalculatorException;
 
-    public double plot() throws CalculatorException;
+    public void plot() throws CalculatorException;
 
 }

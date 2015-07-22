@@ -42,7 +42,7 @@ public class PlotGraph implements PlotFunctions{
     }
 
     @Override
-    public double plot() throws CalculatorException {
-        return 0;
+    public void plot() throws CalculatorException {
+
     }
 }

@@ -5,10 +5,18 @@
  */
 package com.product.calculator.ui;
 
+import com.product.calculator.parse1d;
+import org.springframework.stereotype.Component;
+
+import javax.swing.*;
+import java.awt.*;
+
 /**
  *
  * @author OLUWATOMILOA
  */
+
+@Component
 public class CalculatorGui extends javax.swing.JFrame {
 private double total,total2=0.0;
 private char math_operator;
@@ -16,7 +24,11 @@ private char math_operator;
      * Creates new form calculator
      */
     public CalculatorGui() {
+        parse1d parser = new parse1d();
+        parser.init();
         initComponents();
+
+
     }
   /*  public void getOperator(String btnText)
     {
@@ -32,7 +44,7 @@ private char math_operator;
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    public void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -703,7 +715,7 @@ private char math_operator;
     public javax.swing.JButton butXpowery;
     public javax.swing.JButton butZero;
     public javax.swing.JButton butln;
-    private javax.swing.JPanel graphPanel;
+    public JPanel graphPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -716,7 +728,7 @@ private char math_operator;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    public javax.swing.JTabbedPane jTabbedPane1;
     public javax.swing.JTextField txtFunctionofx;
     public javax.swing.JTextField txtMaximum;
     public javax.swing.JTextField txtMinimum;
