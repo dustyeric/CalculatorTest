@@ -7,19 +7,12 @@ import com.product.calculator.operations.graph.functions.*;
 import com.product.calculator.ui.CalculatorGui;
 
 import javax.swing.*;
-
 public class parse1d extends Applet {
 
     G2Dint graph = new G2Dint();   // Graph class to do the plotting
     Axis xaxis;
     Axis yaxis;
     DataSet data;
-
-    TextField pinput = new TextField(5);       // Number of points
-    TextField mininput = new TextField(10);      // Minimum x value input
-    TextField maxinput = new TextField(10);      // Maximum x value input
-    TextField finput = new TextField(30);      // Input for the function to plot
-    Button plot = new Button("Plot It!"); // Button to plot it.
 
 
     public void init() {
@@ -36,34 +29,8 @@ public class parse1d extends Applet {
         add("North", title);
         add("Center", panel);
 
-        finput.setText("sin(x)");
-        pinput.setText("1000");
-        mininput.setText("0");
-        maxinput.setText("20");
-
 
         panel.setLayout(gridbag);
-
-        Label plabel = new Label("Number of Points");
-        Label minlabel = new Label("Minimum x Value");
-        Label maxlabel = new Label("Maximum x Value");
-        Label flabel = new Label("Function");
-
-        plabel.setFont(font);
-        flabel.setFont(font);
-        minlabel.setFont(font);
-        maxlabel.setFont(font);
-
-        pinput.setFont(font);
-        pinput.setBackground(Color.lightGray);
-        finput.setFont(font);
-        finput.setBackground(Color.lightGray);
-        mininput.setFont(font);
-        mininput.setBackground(Color.lightGray);
-        maxinput.setFont(font);
-        maxinput.setBackground(Color.lightGray);
-        plot.setFont(font);
-        plot.setBackground(Color.green);
 
         c.weightx = 1.0;
         c.weighty = 1.0;
@@ -73,62 +40,7 @@ public class parse1d extends Applet {
 
         gridbag.setConstraints(graph, c);
 
-        c.fill = GridBagConstraints.NONE;
-        c.weightx = 0.0;
-        c.weighty = 0.0;
-        c.gridheight = 1;
-
-        c.gridwidth = 1;
-        c.anchor = GridBagConstraints.EAST;
-        gridbag.setConstraints(flabel, c);
-
-        c.anchor = GridBagConstraints.CENTER;
-        c.gridwidth = GridBagConstraints.RELATIVE;
-        c.fill = GridBagConstraints.HORIZONTAL;
-        gridbag.setConstraints(finput, c);
-
-        c.fill = GridBagConstraints.NONE;
-        c.gridwidth = GridBagConstraints.REMAINDER;
-
-        gridbag.setConstraints(plot, c);
-
-
-        c.gridwidth = 1;
-        c.anchor = GridBagConstraints.EAST;
-        gridbag.setConstraints(plabel, c);
-        c.gridwidth = 2;
-        c.anchor = GridBagConstraints.WEST;
-        c.gridwidth = GridBagConstraints.REMAINDER;
-        gridbag.setConstraints(pinput, c);
-
-        c.gridwidth = 1;
-        c.anchor = GridBagConstraints.EAST;
-        gridbag.setConstraints(minlabel, c);
-        c.gridwidth = 2;
-        c.anchor = GridBagConstraints.WEST;
-        c.gridwidth = GridBagConstraints.REMAINDER;
-        gridbag.setConstraints(mininput, c);
-
-        c.gridwidth = 1;
-        c.anchor = GridBagConstraints.EAST;
-        gridbag.setConstraints(maxlabel, c);
-        c.gridwidth = 2;
-        c.anchor = GridBagConstraints.WEST;
-        c.gridwidth = GridBagConstraints.REMAINDER;
-        gridbag.setConstraints(maxinput, c);
-
-
         panel.add(graph);
-        panel.add(flabel);
-        panel.add(finput);
-        panel.add(plot);
-        panel.add(plabel);
-        panel.add(pinput);
-        panel.add(minlabel);
-        panel.add(mininput);
-        panel.add(maxlabel);
-        panel.add(maxinput);
-
 
         xaxis = graph.createXAxis();
         xaxis.setTitleText("X");
@@ -147,9 +59,10 @@ public class parse1d extends Applet {
         graph.setBackground(new Color(200, 150, 100));
 
 
-        plot();
+        //plot();
 
     }
+/*
 
 
     void plot() {
@@ -235,34 +148,18 @@ public class parse1d extends Applet {
 
         graph.repaint();
     }
-
-
-    public boolean action(Event e, Object a) {
-
-        if (e.target instanceof Button) {
-            if (plot.equals(e.target)) {
-                plot();
-                return true;
-            }
-        }
-
-
-        return false;
-    }
-
+*/
 
     public static void main(String[] a) {
 
-        //javax.swing.JFrame f = new javax.swing.JFrame();
-        CalculatorGui calculatorGui = new CalculatorGui();
+        javax.swing.JFrame f = new javax.swing.JFrame();
         Applet app = new parse1d();
         app.init();
 
-        calculatorGui.graphPanel.add(app);
-
-        calculatorGui.pack();
-        calculatorGui.setSize(new Dimension(500, 500));
-        calculatorGui.setVisible(true);
+        f.getContentPane().add(app);
+        f.pack();
+        f.setSize(new Dimension(500, 500));
+        f.setVisible(true);
     }
 
 }
