@@ -5,6 +5,7 @@
  */
 package com.product.calculator.ui;
 
+import com.product.calculator.parse1d;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
@@ -23,7 +24,10 @@ private char math_operator;
      * Creates new form calculator
      */
     public CalculatorGui() {
+        parse1d parser = new parse1d();
+        parser.init();
         initComponents();
+
 
     }
   /*  public void getOperator(String btnText)
