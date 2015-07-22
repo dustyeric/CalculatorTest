@@ -20,7 +20,7 @@ public class CubeRoot implements SpecialFunctions {
 /**
      * initialize a logger to your function like so
      */
-    private static final Logger LOGGER = LoggerFactory.getLogger(NRoots.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CubeRoot.class);
     @Override
     public double perform(double value) throws CalculatorException {
         LOGGER.info("about performing the cuberoot function for a single argument");
