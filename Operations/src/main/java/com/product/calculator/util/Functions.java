@@ -5,14 +5,19 @@ import com.product.calculator.operations.basic.Division;
 import com.product.calculator.operations.basic.Multiplication;
 import com.product.calculator.operations.basic.Subtraction;
 import com.product.calculator.operations.specialfunctions.Cube;
+import com.product.calculator.operations.specialfunctions.CubeRoot;
 import com.product.calculator.operations.specialfunctions.Exponent;
 import com.product.calculator.operations.specialfunctions.Factorial;
+import com.product.calculator.operations.specialfunctions.LogToBaseTen;
 import com.product.calculator.operations.specialfunctions.Modulos;
+import com.product.calculator.operations.specialfunctions.NRoots;
+import com.product.calculator.operations.specialfunctions.NaturalLog;
 import com.product.calculator.operations.specialfunctions.Percentage;
 import com.product.calculator.operations.specialfunctions.PieClass;
 import com.product.calculator.operations.specialfunctions.Reciprocal;
 
 import com.product.calculator.operations.specialfunctions.Square;
+import com.product.calculator.operations.specialfunctions.SquareRoot;
 import com.product.calculator.operations.specialfunctions.TrigCos;
 
 import com.product.calculator.operations.specialfunctions.TrigSin;
@@ -111,4 +116,10 @@ public class Functions {
     * registering the pi component
     */
    @Autowired public PieClass pieclass;
+    @Autowired public LogToBaseTen logToBaseTen;
+   @Autowired public NRoots nRoots;
+   @Autowired public NaturalLog naturalLog;
+   @Autowired public CubeRoot cubeRoot;
+    @Autowired public SquareRoot squareRoot;
+   
 }
