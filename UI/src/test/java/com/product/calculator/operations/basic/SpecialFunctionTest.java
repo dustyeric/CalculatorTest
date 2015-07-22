@@ -44,6 +44,7 @@ public class SpecialFunctionTest {
             double num1 = functions.modulos.perform(15, 4);
             LOGGER.info("\n************\n\nthe modulos of the two numbers {},", num1);
             LOGGER.info("\n\n****************************\n");
+            assertEquals(3.0, num1,Double.MAX_VALUE);
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -56,9 +57,12 @@ public class SpecialFunctionTest {
             double num1 = functions.reciprocal.perform(4.0);
             LOGGER.info("\n************\n\nthe inverse of the number {},", num1);
             LOGGER.info("\n\n****************************\n");
+            assertEquals(0.25, num1,Double.MAX_VALUE);
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
+             
         }
+       
     }
 
     @Test
@@ -68,6 +72,7 @@ public class SpecialFunctionTest {
             double num1 = functions.square.perform(9.0);
             LOGGER.info("\n************\n\nthe square valueof the number {},", num1);
             LOGGER.info("\n\n****************************\n");
+            assertEquals(81.0, num1,Double.MAX_VALUE);
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -80,6 +85,7 @@ public class SpecialFunctionTest {
             double num1 = functions.cube.perform(9.0);
             LOGGER.info("\n************\n\nthe cube valueof the number {},", num1);
             LOGGER.info("\n\n****************************\n");
+            assertEquals(729.0, num1,Double.MAX_VALUE);
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -92,6 +98,7 @@ public class SpecialFunctionTest {
             double actualValue = functions.nsquare.perform(5, 3);
             LOGGER.info("\n************\n\nthe nsquare value of the number {},", actualValue);
             LOGGER.info("\n\n****************************\n");
+            assertEquals(125.0, actualValue,Double.MAX_VALUE);
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -103,6 +110,7 @@ public class SpecialFunctionTest {
             double Value = functions.percentage.perform(20, 50);
             LOGGER.info("\n************\n\the percentage the numbers {},", Value);
             LOGGER.info("\n\n****************************\n");
+            assertEquals(40.0, Value,Double.MAX_VALUE);
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -135,6 +143,7 @@ public class SpecialFunctionTest {
             double result= functions.valuepower.perform(3.0);
             LOGGER.info("\n************\n\the 10^x value of the number {},", result);
             LOGGER.info("\n\n****************************\n");
+            assertEquals(1000.0, result,Double.MAX_VALUE);
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
