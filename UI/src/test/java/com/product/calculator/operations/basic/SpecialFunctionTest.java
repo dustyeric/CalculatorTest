@@ -53,7 +53,7 @@ public class SpecialFunctionTest {
     public void reciprocalTest() {
         try {
             //LOGGER.info("About carrying out the basic addition test");
-            double num1 = functions.reciprocal.perform(4);
+            double num1 = functions.reciprocal.perform(4.0);
             LOGGER.info("\n************\n\nthe inverse of the number {},", num1);
             LOGGER.info("\n\n****************************\n");
         } catch (CalculatorException ex) {
@@ -65,7 +65,7 @@ public class SpecialFunctionTest {
     public void squareTest() {
         try {
             //LOGGER.info("finding the square value of a single argument");
-            double num1 = functions.square.perform(9);
+            double num1 = functions.square.perform(9.0);
             LOGGER.info("\n************\n\nthe square valueof the number {},", num1);
             LOGGER.info("\n\n****************************\n");
         } catch (CalculatorException ex) {
@@ -77,7 +77,7 @@ public class SpecialFunctionTest {
     public void cubeTest() {
         try {
             //  LOGGER.info("finding the cube value of a single argument");
-            double num1 = functions.cube.perform(9);
+            double num1 = functions.cube.perform(9.0);
             LOGGER.info("\n************\n\nthe cube valueof the number {},", num1);
             LOGGER.info("\n\n****************************\n");
         } catch (CalculatorException ex) {
@@ -109,9 +109,9 @@ public class SpecialFunctionTest {
     }
 
     @Test
-    public void Exponent() {
+    public void ExponentTest() {
         try {
-            double result = functions.exponent.perform(2);
+            double result = functions.exponent.perform(2.0);
             LOGGER.info("\n************\n\the exponent the number {},", result);
             LOGGER.info("\n\n****************************\n");
         } catch (CalculatorException ex) {
@@ -124,6 +124,16 @@ public class SpecialFunctionTest {
         try {
             long result = functions.factorial.perform(17);
             LOGGER.info("\n************\n\the factorial of the number {},", result);
+            LOGGER.info("\n\n****************************\n");
+        } catch (CalculatorException ex) {
+            java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    @Test
+    public void ValuepowerTest(){
+        try {
+            double result= functions.valuepower.perform(3.0);
+            LOGGER.info("\n************\n\the 10^x value of the number {},", result);
             LOGGER.info("\n\n****************************\n");
         } catch (CalculatorException ex) {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);

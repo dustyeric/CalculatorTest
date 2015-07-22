@@ -13,28 +13,35 @@ import org.springframework.stereotype.Component;
 
 /**
  *
- * @author user
+ * @author TOMILOLA
  */
 @Component
-public class CubeRoot implements SpecialFunctions {
-/**
-     * initialize a logger to your function like so
+public class ValuePower implements SpecialFunctions {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(ValuePower.class);
+
+    /**
+     * finds the value of 10 to the power of a single argument
+     *
+     * @param arg1
+     * @return integer
+     * @throws CalculatorException
      */
-    private static final Logger LOGGER = LoggerFactory.getLogger(CubeRoot.class);
     @Override
-    public double perform(double value) throws CalculatorException {
-        LOGGER.info("about performing the cuberoot function for a single argument");
-        return Math.cbrt(value);
+    public double perform(double arg1) throws CalculatorException {
+        LOGGER.info("10 raised to a specific value");
+        return Math.pow(10, arg1);
+
     }
 
     @Override
     public double perform(double arg1, double arg2) throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public long perform(long arg1) throws CalculatorException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
-    
+
 }

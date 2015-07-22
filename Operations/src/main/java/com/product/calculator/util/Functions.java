@@ -15,6 +15,7 @@ import com.product.calculator.operations.specialfunctions.Square;
 import com.product.calculator.operations.specialfunctions.TrigCos;
 
 import com.product.calculator.operations.specialfunctions.TrigSin;
+import com.product.calculator.operations.specialfunctions.ValuePower;
 import com.product.calculator.operations.specialfunctions.nSquare;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,4 +102,8 @@ public class Functions {
     */
    
    @Autowired public Factorial factorial;
+   /**
+    * registering the 10^x compnent
+    */
+   @Autowired public ValuePower valuepower;
 }
