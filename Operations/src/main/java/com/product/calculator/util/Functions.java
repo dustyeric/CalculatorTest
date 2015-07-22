@@ -5,17 +5,27 @@ import com.product.calculator.operations.basic.Division;
 import com.product.calculator.operations.basic.Multiplication;
 import com.product.calculator.operations.basic.Subtraction;
 import com.product.calculator.operations.specialfunctions.Cube;
+import com.product.calculator.operations.specialfunctions.CubeRoot;
 import com.product.calculator.operations.specialfunctions.Exponent;
 import com.product.calculator.operations.specialfunctions.Factorial;
+import com.product.calculator.operations.specialfunctions.LogToBaseTen;
+import com.product.calculator.operations.specialfunctions.LogToBaseX;
 import com.product.calculator.operations.specialfunctions.Modulos;
+import com.product.calculator.operations.specialfunctions.NRoots;
+import com.product.calculator.operations.specialfunctions.NaturalLog;
 import com.product.calculator.operations.specialfunctions.Percentage;
 import com.product.calculator.operations.specialfunctions.PieClass;
 import com.product.calculator.operations.specialfunctions.Reciprocal;
 
 import com.product.calculator.operations.specialfunctions.Square;
+import com.product.calculator.operations.specialfunctions.SquareRoot;
+import com.product.calculator.operations.specialfunctions.TrigArcCos;
+import com.product.calculator.operations.specialfunctions.TrigArcSin;
+import com.product.calculator.operations.specialfunctions.TrigArcTan;
 import com.product.calculator.operations.specialfunctions.TrigCos;
 
 import com.product.calculator.operations.specialfunctions.TrigSin;
+import com.product.calculator.operations.specialfunctions.TrigTan;
 import com.product.calculator.operations.specialfunctions.ValuePower;
 import com.product.calculator.operations.specialfunctions.nSquare;
 
@@ -111,4 +121,44 @@ public class Functions {
     * registering the pi component
     */
    @Autowired public PieClass pieclass;
+   /**
+    * registering the LogTobase10 component
+    */
+    @Autowired public LogToBaseTen logToBaseTen;
+    /**
+    * registering the n roots component
+    */
+   @Autowired public NRoots nRoots;
+   /**
+    * registering the NaturalLog component
+    */
+   @Autowired public NaturalLog naturalLog;
+   /**
+    * registering the cubeRoot component
+    */
+   @Autowired public CubeRoot cubeRoot;
+   /**
+    * registering the SquareRoot component
+    */
+    @Autowired public SquareRoot squareRoot;
+    /**
+    * registering the Log to base x component
+    */
+     @Autowired public LogToBaseX logToBaseX;
+     /**
+    * registering the arccos component
+    */
+     @Autowired public TrigArcCos trigArcCos;
+     /**
+    * registering the arcsin component
+    */
+     @Autowired public TrigArcSin trigArcSin;
+     /**
+    * registering the arctan component
+    */
+     @Autowired public TrigArcTan trigArcTan;
+     /**
+    * registering the trig tan component
+    */
+     @Autowired public TrigTan trigTan;
 }
