@@ -13,8 +13,9 @@ public class AppUI {
     /**
      * starts the ui
      */
+    
     public void startUI(){
-        
+     
     }
     
     public void setDisplay(){

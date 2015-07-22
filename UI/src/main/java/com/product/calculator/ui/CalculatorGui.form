@@ -154,62 +154,62 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="seven" min="-2" max="-2" attributes="0"/>
+                                      <Component id="butSeven" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="eight" min="-2" max="-2" attributes="0"/>
+                                      <Component id="butEight" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="24" max="32767" attributes="0"/>
-                                      <Component id="nine" min="-2" max="-2" attributes="0"/>
+                                      <Component id="butNine" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="clear" min="-2" max="-2" attributes="0"/>
+                                      <Component id="butClear" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="plusminus" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="butPlusminus" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                                  <Component id="mod" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="butMod" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="memory" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="butMemory" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" attributes="0">
-                                                          <Component id="zero" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="butZero" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="dot" min="-2" pref="41" max="-2" attributes="0"/>
+                                                          <Component id="butDot" min="-2" pref="41" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                                                          <Component id="two" min="-2" pref="39" max="-2" attributes="0"/>
+                                                          <Component id="butTwo" min="-2" pref="39" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="three" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="equals" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="butThree" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="butEquals" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="minus" min="-2" pref="43" max="-2" attributes="0"/>
-                                              <Component id="divide" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <Component id="butMinus" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <Component id="butDivide" min="-2" pref="43" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="one" min="-2" pref="39" max="-2" attributes="0"/>
+                                          <Component id="butOne" min="-2" pref="39" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="plus" min="-2" pref="40" max="-2" attributes="0"/>
+                                          <Component id="butPlus" min="-2" pref="40" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="four" min="-2" max="-2" attributes="0"/>
+                                          <Component id="butFour" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="five" min="-2" max="-2" attributes="0"/>
+                                          <Component id="butFive" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="six" min="-2" max="-2" attributes="0"/>
+                                          <Component id="butSix" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="multiply" min="-2" pref="43" max="-2" attributes="0"/>
+                                          <Component id="butMultiply" min="-2" pref="43" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -222,38 +222,38 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="clear" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="nine" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="eight" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="seven" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butClear" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butNine" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butEight" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butSeven" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="four" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="five" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="six" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="multiply" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butFour" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butFive" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butSix" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butMultiply" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="30" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="one" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="plus" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="three" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="two" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butOne" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butPlus" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butThree" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butTwo" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="dot" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="equals" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                                  <Component id="minus" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="zero" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butDot" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butEquals" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="butMinus" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butZero" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="mod" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="memory" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="divide" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="plusminus" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butMod" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butMemory" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butDivide" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butPlusminus" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -261,7 +261,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="seven">
+                    <Component class="javax.swing.JButton" name="butSeven">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -269,10 +269,13 @@
                         <Property name="text" type="java.lang.String" value="7"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sevenActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butSevenActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="eight">
+                    <Component class="javax.swing.JButton" name="butEight">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -280,10 +283,13 @@
                         <Property name="text" type="java.lang.String" value="8"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eightActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butEightActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="nine">
+                    <Component class="javax.swing.JButton" name="butNine">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -291,18 +297,24 @@
                         <Property name="text" type="java.lang.String" value="9"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nineActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butNineActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="clear">
+                    <Component class="javax.swing.JButton" name="butClear">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="CE"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="five">
+                    <Component class="javax.swing.JButton" name="butFive">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -310,10 +322,13 @@
                         <Property name="text" type="java.lang.String" value="5"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fiveActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butFiveActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="four">
+                    <Component class="javax.swing.JButton" name="butFour">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -321,26 +336,35 @@
                         <Property name="text" type="java.lang.String" value="4"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fourActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butFourActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="six">
+                    <Component class="javax.swing.JButton" name="butSix">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="6"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="multiply">
+                    <Component class="javax.swing.JButton" name="butMultiply">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="*"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="one">
+                    <Component class="javax.swing.JButton" name="butOne">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -348,10 +372,13 @@
                         <Property name="text" type="java.lang.String" value="1"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oneActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butOneActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="two">
+                    <Component class="javax.swing.JButton" name="butTwo">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -359,10 +386,13 @@
                         <Property name="text" type="java.lang.String" value="2"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="twoActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butTwoActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="three">
+                    <Component class="javax.swing.JButton" name="butThree">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -370,18 +400,24 @@
                         <Property name="text" type="java.lang.String" value="3"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="threeActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butThreeActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="plus">
+                    <Component class="javax.swing.JButton" name="butPlus">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="dot">
+                    <Component class="javax.swing.JButton" name="butDot">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -389,58 +425,82 @@
                         <Property name="text" type="java.lang.String" value="."/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dotActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butDotActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="equals">
+                    <Component class="javax.swing.JButton" name="butEquals">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="="/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butEqualsActionPerformed"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="minus">
+                    <Component class="javax.swing.JButton" name="butMinus">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="memory">
+                    <Component class="javax.swing.JButton" name="butMemory">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="mod">
+                    <Component class="javax.swing.JButton" name="butMod">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="%"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="divide">
+                    <Component class="javax.swing.JButton" name="butDivide">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="/"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="plusminus">
+                    <Component class="javax.swing.JButton" name="butPlusminus">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="&#xb1;"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="zero">
+                    <Component class="javax.swing.JButton" name="butZero">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -448,8 +508,11 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zeroActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butZeroActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -470,49 +533,49 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="openbracket" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
-                                  <Component id="xpowery" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <Component id="butOpenbracket" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <Component id="butXpowery" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="ln" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
+                                      <Component id="butln" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="logarithm" max="32767" attributes="0"/>
-                                              <Component id="sine" min="-2" pref="56" max="-2" attributes="0"/>
+                                              <Component id="butLogarithm" max="32767" attributes="0"/>
+                                              <Component id="butSine" min="-2" pref="56" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="cosine" min="-2" pref="58" max="-2" attributes="0"/>
-                                  <Component id="factorial" max="32767" attributes="0"/>
-                                  <Component id="pi" max="32767" attributes="0"/>
-                                  <Component id="square" max="32767" attributes="0"/>
-                                  <Component id="closebracket" max="32767" attributes="0"/>
+                                  <Component id="butCosine" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <Component id="butFactorial" max="32767" attributes="0"/>
+                                  <Component id="butPi" max="32767" attributes="0"/>
+                                  <Component id="butSquare" max="32767" attributes="0"/>
+                                  <Component id="butClosebracket" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="tangent" min="-2" pref="55" max="-2" attributes="0"/>
-                                      <Component id="exponential" max="32767" attributes="0"/>
-                                      <Component id="cube" max="32767" attributes="0"/>
-                                      <Component id="squareroot" max="32767" attributes="0"/>
+                                      <Component id="butTangent" min="-2" pref="55" max="-2" attributes="0"/>
+                                      <Component id="butExponential" max="32767" attributes="0"/>
+                                      <Component id="butCube" max="32767" attributes="0"/>
+                                      <Component id="butSquareroot" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="tenpowerofx" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butTenpowerofx" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="reciprocal" max="32767" attributes="0"/>
+                                          <Component id="butReciprocal" max="32767" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="sinearc" min="-2" pref="56" max="-2" attributes="0"/>
+                                              <Component id="butSinearc" min="-2" pref="56" max="-2" attributes="0"/>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                              <Component id="rootofx" min="-2" pref="54" max="-2" attributes="0"/>
+                                              <Component id="ButRootofx" min="-2" pref="54" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -521,11 +584,11 @@
                                       <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <Component id="tangentarc" min="-2" max="-2" attributes="0"/>
+                                              <Component id="butTangentarc" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
-                                              <Component id="cosinearc" min="-2" max="-2" attributes="0"/>
+                                              <Component id="butCosinearc" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -539,38 +602,38 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="sine" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cosine" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tangent" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="reciprocal" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butSine" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butCosine" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butTangent" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butReciprocal" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="logarithm" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="factorial" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="exponential" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="sinearc" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butLogarithm" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butFactorial" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butExponential" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butSinearc" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="ln" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="pi" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tenpowerofx" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cosinearc" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butln" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butPi" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butTenpowerofx" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butCosinearc" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="xpowery" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="square" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cube" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tangentarc" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butXpowery" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butSquare" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butCube" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butTangentarc" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="openbracket" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="closebracket" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="squareroot" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="rootofx" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butOpenbracket" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butClosebracket" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butSquareroot" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ButRootofx" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -578,105 +641,165 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="sine">
+                    <Component class="javax.swing.JButton" name="butSine">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="sin"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="cosine">
+                    <Component class="javax.swing.JButton" name="butCosine">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="cos"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="tangent">
+                    <Component class="javax.swing.JButton" name="butTangent">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="tan"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="reciprocal">
+                    <Component class="javax.swing.JButton" name="butReciprocal">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="  1/x"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="logarithm">
+                    <Component class="javax.swing.JButton" name="butLogarithm">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="log"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="factorial">
+                    <Component class="javax.swing.JButton" name="butFactorial">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="n!"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="exponential">
+                    <Component class="javax.swing.JButton" name="butExponential">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="exp"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="sinearc">
+                    <Component class="javax.swing.JButton" name="butSinearc">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="sin-1"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="ln">
+                    <Component class="javax.swing.JButton" name="butln">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ln"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="pi">
+                    <Component class="javax.swing.JButton" name="butPi">
                       <Properties>
                         <Property name="text" type="java.lang.String" value=" &#x3c0; "/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="tenpowerofx">
+                    <Component class="javax.swing.JButton" name="butTenpowerofx">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="10^x"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="cosinearc">
+                    <Component class="javax.swing.JButton" name="butCosinearc">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="cos-1"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="xpowery">
+                    <Component class="javax.swing.JButton" name="butXpowery">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="x^y"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="square">
+                    <Component class="javax.swing.JButton" name="butSquare">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="x^2"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="cube">
+                    <Component class="javax.swing.JButton" name="butCube">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="x^3"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="tangentarc">
+                    <Component class="javax.swing.JButton" name="butTangentarc">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="tan-1"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="openbracket">
+                    <Component class="javax.swing.JButton" name="butOpenbracket">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="("/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="closebracket">
+                    <Component class="javax.swing.JButton" name="butClosebracket">
                       <Properties>
                         <Property name="text" type="java.lang.String" value=")"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="squareroot">
+                    <Component class="javax.swing.JButton" name="butSquareroot">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="2&#x221a;"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="rootofx">
+                    <Component class="javax.swing.JButton" name="ButRootofx">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="x&#x221a;"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -704,11 +827,11 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="minimum" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="maximum" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="points" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="graph" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                  <Component id="functionofx" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="txtMinimum" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="txtMaximum" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="txtPoints" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="butPlot" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                  <Component id="txtFunctionofx" min="-2" pref="150" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="45" max="32767" attributes="0"/>
                           </Group>
@@ -720,25 +843,25 @@
                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="functionofx" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtFunctionofx" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="points" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPoints" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="minimum" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtMinimum" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="maximum" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtMaximum" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="graph" min="-2" max="-2" attributes="0"/>
+                              <Component id="butPlot" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -765,18 +888,33 @@
                         <Property name="text" type="java.lang.String" value="max X Value"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="functionofx">
+                    <Component class="javax.swing.JTextField" name="txtFunctionofx">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="points">
+                    <Component class="javax.swing.JTextField" name="txtPoints">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="minimum">
+                    <Component class="javax.swing.JTextField" name="txtMinimum">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="maximum">
+                    <Component class="javax.swing.JTextField" name="txtMaximum">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JButton" name="graph">
+                    <Component class="javax.swing.JButton" name="butPlot">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Plot Graph"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -787,11 +925,14 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JTextArea" name="screen">
+                    <Component class="javax.swing.JTextArea" name="txtscreen">
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
-                        <Property name="rows" type="int" value="5"/>
+                        <Property name="rows" type="int" value="4"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
