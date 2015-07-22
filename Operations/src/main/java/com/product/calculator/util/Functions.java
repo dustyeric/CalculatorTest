@@ -9,6 +9,7 @@ import com.product.calculator.operations.specialfunctions.CubeRoot;
 import com.product.calculator.operations.specialfunctions.Exponent;
 import com.product.calculator.operations.specialfunctions.Factorial;
 import com.product.calculator.operations.specialfunctions.LogToBaseTen;
+import com.product.calculator.operations.specialfunctions.LogToBaseX;
 import com.product.calculator.operations.specialfunctions.Modulos;
 import com.product.calculator.operations.specialfunctions.NRoots;
 import com.product.calculator.operations.specialfunctions.NaturalLog;
@@ -121,5 +122,5 @@ public class Functions {
    @Autowired public NaturalLog naturalLog;
    @Autowired public CubeRoot cubeRoot;
     @Autowired public SquareRoot squareRoot;
-   
+   @Autowired public LogToBaseX logToBaseX;
 }
