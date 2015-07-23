@@ -5,16 +5,25 @@ import java.applet.*;
 
 import com.product.calculator.operations.graph.functions.*;
 import com.product.calculator.ui.CalculatorGui;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.*;
-public class parse1d extends Applet {
 
-    CalculatorGui calculatorGui = new CalculatorGui();
-    G2Dint graph = new G2Dint();   // Graph class to do the plotting
+@Component
+public class Graph2DParse extends Applet {
+
+    @Autowired
+    CalculatorGui calculatorGui;
+
+    @Autowired
+    G2Dint graph;   // Graph class to do the plotting
+
     Axis xaxis;
-    Axis yaxis;
-    DataSet data;
 
+    Axis yaxis;
+
+    DataSet data;
 
     String fox;
     int points;
@@ -162,7 +171,7 @@ public class parse1d extends Applet {
     public void create() {
 
         javax.swing.JFrame f = new javax.swing.JFrame();
-        Applet app = new parse1d();
+        Applet app = new Graph2DParse();
         app.init();
         f.getContentPane().add(app);
         f.pack();

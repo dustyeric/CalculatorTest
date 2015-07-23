@@ -5,11 +5,11 @@
  */
 package com.product.calculator.ui;
 
-import com.product.calculator.parse1d;
+import com.product.calculator.Graph2DParse;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
-import java.awt.*;
 
 /**
  *
@@ -23,12 +23,14 @@ private char math_operator;
     /**
      * Creates new form calculator
      */
+
+    @Autowired
+    Graph2DParse parser;
+
     public CalculatorGui() {
-        parse1d parser = new parse1d();
+
         parser.init();
         initComponents();
-
-
     }
   /*  public void getOperator(String btnText)
     {
