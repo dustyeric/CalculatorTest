@@ -9,12 +9,13 @@ import com.product.calculator.operations.specialfunctions.CubeRoot;
 import com.product.calculator.operations.specialfunctions.Exponent;
 import com.product.calculator.operations.specialfunctions.Factorial;
 import com.product.calculator.operations.specialfunctions.LogToBaseTen;
-import com.product.calculator.operations.specialfunctions.LogToBaseX;
+//import com.product.calculator.operations.specialfunctions.LogToBaseX;
 import com.product.calculator.operations.specialfunctions.Modulos;
 import com.product.calculator.operations.specialfunctions.NRoots;
 import com.product.calculator.operations.specialfunctions.NaturalLog;
 import com.product.calculator.operations.specialfunctions.Percentage;
 import com.product.calculator.operations.specialfunctions.PieClass;
+import com.product.calculator.operations.specialfunctions.PlusMinus;
 import com.product.calculator.operations.specialfunctions.Reciprocal;
 
 import com.product.calculator.operations.specialfunctions.Square;
@@ -144,7 +145,7 @@ public class Functions {
     /**
     * registering the Log to base x component
     */
-     @Autowired public LogToBaseX logToBaseX;
+    // @Autowired public LogToBaseX logToBaseX;
      /**
     * registering the arccos component
     */
@@ -161,4 +162,9 @@ public class Functions {
     * registering the trig tan component
     */
      @Autowired public TrigTan trigTan;
+     /**
+      * registering the PlusMinus component
+      */
+     @Autowired
+     public PlusMinus plusMinus;
 }

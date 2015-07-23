@@ -160,4 +160,16 @@ public class SpecialFunctionTest {
             java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    @Test
+    public void PlusMinus(){
+        try {
+            double result=functions.plusMinus.perform(-7.0);
+            LOGGER.info("\n************\n\the value {},", result);
+            LOGGER.info("\n\n****************************\n");
+            assertEquals(7.0, result,Double.MAX_VALUE);
+        } catch (CalculatorException ex) {
+            java.util.logging.Logger.getLogger(SpecialFunctionTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    
+    }
 }
