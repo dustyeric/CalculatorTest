@@ -6,6 +6,7 @@
 package com.product.calculator.ui;
 
 import com.product.calculator.Graph2DParse;
+import com.product.calculator.operations.graph.functions.ParseFunction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -23,6 +24,7 @@ private char math_operator;
     /**
      * Creates new form calculator
      */
+public static StringBuffer sb=new StringBuffer();
 
     @Autowired
     Graph2DParse parser;
@@ -32,12 +34,12 @@ private char math_operator;
         parser.init();
         initComponents();
     }
-  /*  public void getOperator(String btnText)
+    public void getOperator(String btnText)
     {
         math_operator=btnText.charAt(0);
-        total=total+Double.parseDouble(txtscreen.getText());
+       // total=total+Double.parseDouble(txtscreen.getText());
         txtscreen.setText(" ");
-    }*/
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,7 +48,7 @@ private char math_operator;
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    public void initComponents() {
+    private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -171,6 +173,11 @@ private char math_operator;
 
         butMultiply.setBackground(new java.awt.Color(102, 102, 102));
         butMultiply.setText("*");
+        butMultiply.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butMultiplyActionPerformed(evt);
+            }
+        });
 
         butOne.setBackground(new java.awt.Color(102, 102, 102));
         butOne.setText("1");
@@ -198,6 +205,11 @@ private char math_operator;
 
         butPlus.setBackground(new java.awt.Color(102, 102, 102));
         butPlus.setText("+");
+        butPlus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butPlusActionPerformed(evt);
+            }
+        });
 
         butDot.setBackground(new java.awt.Color(102, 102, 102));
         butDot.setText(".");
@@ -217,18 +229,38 @@ private char math_operator;
 
         butMinus.setBackground(new java.awt.Color(102, 102, 102));
         butMinus.setText("-");
+        butMinus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butMinusActionPerformed(evt);
+            }
+        });
 
         butMemory.setBackground(new java.awt.Color(102, 102, 102));
         butMemory.setText("M");
 
         butMod.setBackground(new java.awt.Color(102, 102, 102));
         butMod.setText("%");
+        butMod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butModActionPerformed(evt);
+            }
+        });
 
         butDivide.setBackground(new java.awt.Color(102, 102, 102));
         butDivide.setText("/");
+        butDivide.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butDivideActionPerformed(evt);
+            }
+        });
 
         butPlusminus.setBackground(new java.awt.Color(102, 102, 102));
         butPlusminus.setText("±");
+        butPlusminus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butPlusminusActionPerformed(evt);
+            }
+        });
 
         butZero.setBackground(new java.awt.Color(102, 102, 102));
         butZero.setText("0");
@@ -596,79 +628,111 @@ private char math_operator;
     }// </editor-fold>//GEN-END:initComponents
 
     private void butFiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butFiveActionPerformed
-        String fiveText=txtscreen.getText()+butFive.getText();
-         txtscreen.setText(fiveText);
+       String fiveText=txtscreen.getText()+butFive.getText();
+       sb.append(fiveText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butFiveActionPerformed
 
     private void butDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butDotActionPerformed
-         String dotText=txtscreen.getText()+butDot.getText();
-        txtscreen.setText(dotText);
+       String dotText=txtscreen.getText()+butDot.getText();
+       sb.append(dotText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butDotActionPerformed
 
     private void butOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butOneActionPerformed
-         String oneText=txtscreen.getText()+butOne.getText();
-         txtscreen.setText(oneText);
+          String oneText=txtscreen.getText()+butOne.getText();
+       sb.append(oneText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butOneActionPerformed
 
     private void butTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butTwoActionPerformed
        String twoText=txtscreen.getText()+butTwo.getText();
-       txtscreen.setText(twoText);
+       sb.append(twoText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butTwoActionPerformed
 
     private void butThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butThreeActionPerformed
-         String threeText=txtscreen.getText()+butThree.getText();
-         txtscreen.setText(threeText);
+          String threeText=txtscreen.getText()+butThree.getText();
+       sb.append(threeText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butThreeActionPerformed
 
     private void butFourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butFourActionPerformed
-        String fourText=txtscreen.getText()+butFour.getText();
-         txtscreen.setText(fourText);
+         String fourText=txtscreen.getText()+butFour.getText();
+       sb.append(fourText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butFourActionPerformed
 
     private void butSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butSevenActionPerformed
         String sevenText=txtscreen.getText()+butSeven.getText();
-        txtscreen.setText(sevenText);
+       sb.append(sevenText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butSevenActionPerformed
 
     private void butEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butEightActionPerformed
          String eightText=txtscreen.getText()+butEight.getText();
-         txtscreen.setText(eightText);
+       sb.append(eightText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butEightActionPerformed
 
     private void butNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butNineActionPerformed
-        String nineText=txtscreen.getText()+butNine.getText();
-        txtscreen.setText(nineText);
+       String nineText=txtscreen.getText()+butNine.getText();
+       sb.append(nineText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butNineActionPerformed
 
     private void butZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butZeroActionPerformed
         String zeroText=txtscreen.getText()+butZero.getText();
-        txtscreen.setText(zeroText);
+       sb.append(zeroText);
+       txtscreen.setText(sb.toString());
     }//GEN-LAST:event_butZeroActionPerformed
 
     private void butEqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butEqualsActionPerformed
-      /* switch(math_operator)
-      {
-          case '+':
-              total2=total+Double.parseDouble(txtscreen.getText());
-              break;
-          case'-':
-               total2=total-Double.parseDouble(txtscreen.getText());
-              break;
-           case'/':
-                total2=total/Double.parseDouble(txtscreen.getText());
-               break;
-           case'*':
-                total2=total*Double.parseDouble(txtscreen.getText());
-               break;
-           case'%':
-                total2=total%Double.parseDouble(txtscreen.getText());
-               break;
-              
-      }
-      txtscreen.setText(Double.toString(total2));
-      total=0;
-        */
+        ParseFunction function=new ParseFunction(txtscreen.getText().toString());
+        function.parse();
+        try{
+            txtscreen.setText(String.valueOf(function.getResult()));
+        }
+        catch(Exception e){
+            System.err.println(e.getMessage());
+        }
     }//GEN-LAST:event_butEqualsActionPerformed
+
+    private void butPlusminusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butPlusminusActionPerformed
+        String btn_text=butPlusminus.getText();
+        
+        getOperator(sb.append(btn_text)+sb.toString());
+    }//GEN-LAST:event_butPlusminusActionPerformed
+
+    private void butModActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butModActionPerformed
+        String btn_text=butMod.getText();
+        
+        getOperator(sb.append(btn_text)+sb.toString());
+    }//GEN-LAST:event_butModActionPerformed
+
+    private void butMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butMinusActionPerformed
+       String btn_text=butMinus.getText();
+        
+        getOperator(sb.append(btn_text)+sb.toString());
+    }//GEN-LAST:event_butMinusActionPerformed
+
+    private void butPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butPlusActionPerformed
+        String btn_text=butPlus.getText();
+        
+        getOperator(sb.append(btn_text)+sb.toString());
+    }//GEN-LAST:event_butPlusActionPerformed
+
+    private void butMultiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butMultiplyActionPerformed
+        String btn_text=butMultiply.getText();
+        
+        getOperator(sb.append(btn_text)+sb.toString());
+    }//GEN-LAST:event_butMultiplyActionPerformed
+
+    private void butDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butDivideActionPerformed
+        String btn_text=butDivide.getText();
+        
+        getOperator(sb.append(btn_text)+sb.toString());
+    }//GEN-LAST:event_butDivideActionPerformed
 
     /**
      * @param args the command line arguments
@@ -717,7 +781,7 @@ private char math_operator;
     public javax.swing.JButton butXpowery;
     public javax.swing.JButton butZero;
     public javax.swing.JButton butln;
-    public JPanel graphPanel;
+    private javax.swing.JPanel graphPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -730,7 +794,7 @@ private char math_operator;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    public javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane1;
     public javax.swing.JTextField txtFunctionofx;
     public javax.swing.JTextField txtMaximum;
     public javax.swing.JTextField txtMinimum;
