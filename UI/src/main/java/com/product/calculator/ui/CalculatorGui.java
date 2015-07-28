@@ -37,7 +37,7 @@ public static StringBuffer sb=new StringBuffer();
     public void getOperator(String btnText)
     {
         math_operator=btnText.charAt(0);
-       // total=total+Double.parseDouble(txtscreen.getText());
+       
         txtscreen.setText(" ");
     }
 
